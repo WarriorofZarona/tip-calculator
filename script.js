@@ -10,7 +10,6 @@ function convertTip() {
 
     var tipVal = (parseFloat(tipEl.value) * .01).toFixed(2);
 
-    console.log(tipVal);
     return tipVal
 
 }
@@ -23,13 +22,10 @@ submitEl.addEventListener("click", function (event) {
 
     var tipTotal = (totalPrice * convertTip()).toFixed(2);
 
-    console.log(tipTotal)
     tipAmountEl.textContent = tipTotal;
 
 
     var newPrice = (parseFloat(tipTotal) + parseFloat(totalPrice)).toFixed(2);
-
-    console.log(newPrice)
 
     newTotalEl.textContent = newPrice
 
